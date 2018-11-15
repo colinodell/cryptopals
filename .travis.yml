@@ -1,0 +1,20 @@
+language: php
+
+dist: trusty
+
+php:
+  - 7.2
+  
+cache:
+  directories:
+    - $HOME/.composer/cache
+  fast_finish: true
+
+sudo: false
+
+before_script:
+  - travis_retry composer update --no-interaction --prefer-dist
+
+script:
+  - vendor/bin/phpunit
+

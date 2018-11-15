@@ -1,0 +1,29 @@
+{
+    "name": "colinodell/cryptopals",
+    "description": "My attempts at the CryptoPals challenges",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.2",
+        "ext-openssl": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.4"
+    },
+    "authors": [
+        {
+            "name": "Colin O'Dell",
+            "email": "colinodell@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ColinODell\\Cryptopals\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ColinODell\\Cryptopals\\Test\\": "tests"
+        }
+    }
+}
